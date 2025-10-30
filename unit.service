@@ -1,0 +1,12 @@
+[Unit]
+Description=Monitoring Process 'test'
+After=network.target
+
+[Service]
+ExecStart=/bin/bash /path/to/script.sh
+Restart=always
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target
